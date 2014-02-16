@@ -59,7 +59,8 @@ def loadVobDictFromVobsTab(ss, skipList):
                 last_mod_date=sh.row(rx)[21].value.rstrip(),
                 last_mod_username=sh.row(rx)[22].value.rstrip(),
                 last_mod_email=sh.row(rx)[23].value.rstrip(),
-                history_to_migrate=xlDateAsText(sh.row(rx)[24].value, book))
+				history_to_migrate=None                
+				)
 
             #vobs[sh.row(rx)[0].value.rstrip()]['history_to_migrate']='2012-11-01'
 
